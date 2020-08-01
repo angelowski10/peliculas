@@ -11,6 +11,8 @@ import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
@@ -33,28 +35,31 @@ import javax.xml.bind.annotation.XmlTransient;
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Usuario.findAll", query = "SELECT u FROM Usuario u")
-    , @NamedQuery(name = "Usuario.findByIdUsuario", query = "SELECT u FROM Usuario u WHERE u.idUsuario = :idUsuario")
-    , @NamedQuery(name = "Usuario.findByNomUsuario", query = "SELECT u FROM Usuario u WHERE u.nomUsuario = :nomUsuario")
-    , @NamedQuery(name = "Usuario.findByPassword", query = "SELECT u FROM Usuario u WHERE u.password = :password")
-    , @NamedQuery(name = "Usuario.findByNombres", query = "SELECT u FROM Usuario u WHERE u.nombres = :nombres")})
+    , @NamedQuery(name = "Usuario.findByIdUsuario", query = "SELECT u FROM Usuario u WHERE u.idUsuario = :idUsuario")})
 public class Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
-    @NotNull
     @Column(name = "Id_Usuario")
     private Integer idUsuario;
+    @Lob
+    @Size(max = 65535)
     @Column(name = "nom_usuario")
-    private Integer nomUsuario;
+    private String nomUsuario;
     @Basic(optional = false)
     @NotNull
+    @Lob
+    @Size(min = 1, max = 65535)
     @Column(name = "password")
-    private int password;
+    private String password;
     @Basic(optional = false)
     @NotNull
+    @Lob
+    @Size(min = 1, max = 65535)
     @Column(name = "nombres")
-    private int nombres;
+    private String nombres;
     @Basic(optional = false)
     @NotNull
     @Lob
@@ -80,7 +85,7 @@ public class Usuario implements Serializable {
         this.idUsuario = idUsuario;
     }
 
-    public Usuario(Integer idUsuario, int password, int nombres, String apellidos, String correo) {
+    public Usuario(Integer idUsuario, String password, String nombres, String apellidos, String correo) {
         this.idUsuario = idUsuario;
         this.password = password;
         this.nombres = nombres;
@@ -96,27 +101,27 @@ public class Usuario implements Serializable {
         this.idUsuario = idUsuario;
     }
 
-    public Integer getNomUsuario() {
+    public String getNomUsuario() {
         return nomUsuario;
     }
 
-    public void setNomUsuario(Integer nomUsuario) {
+    public void setNomUsuario(String nomUsuario) {
         this.nomUsuario = nomUsuario;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
-    public int getNombres() {
+    public String getNombres() {
         return nombres;
     }
 
-    public void setNombres(int nombres) {
+    public void setNombres(String nombres) {
         this.nombres = nombres;
     }
 
