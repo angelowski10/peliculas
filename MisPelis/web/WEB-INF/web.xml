@@ -7,10 +7,25 @@
     </session-config>
     <jsp-config>
         <jsp-property-group>
-            <display-name>Header-HomePublico</display-name>
+            <description>Marcos de modulos publicos</description>
+            <display-name>Header and Footer -HomePublico</display-name>
             <url-pattern>/WEB-INF/HomePublico/*</url-pattern>
             <include-prelude>/WEB-INF/HomePublico/header/header.jsp</include-prelude>
             <include-coda>/WEB-INF/HomePublico/footer/footer.jsp</include-coda>
+        </jsp-property-group>
+        <jsp-property-group>
+            <description>Marcos de modulos administrativos</description>
+            <display-name>Header and Footer- Administrador</display-name>
+            <url-pattern>/WEB-INF/administrador/*</url-pattern>
+            <include-prelude>/WEB-INF/administrador/header/header.jsp</include-prelude>
+            <include-coda>/WEB-INF/administrador/footer/footer.jsp</include-coda>
+        </jsp-property-group>
+        <jsp-property-group>
+            <description>Marcos de modulos Superadministrativos</description>
+            <display-name>Header and Footer</display-name>
+            <url-pattern>/WEB-INF/superadministrador/*</url-pattern>
+            <include-prelude>/WEB-INF/superadministrador/header/header.jsp</include-prelude>
+            <include-coda>/WEB-INF/superadministrador/footer/footer.jsp</include-coda>
         </jsp-property-group>
     </jsp-config>
 </web-app>
