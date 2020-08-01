@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Mis Pelis</title>
+<title>Pelis plus</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,6 +17,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="recursos/css/faqstyle.css" type="text/css" media="all" />
 <link href="recursos/css/single.css" rel='stylesheet' type='text/css' />
 <link href="recursos/css/medile.css" rel='stylesheet' type='text/css' />
+<!-- news-css -->
+<link rel="stylesheet" href="recursos/news-css/news.css" type="text/css" media="all" />
+<!-- //news-css -->
+<!-- list-css -->
+<link rel="stylesheet" href="recursos/list-css/list.css" type="text/css" media="all" />
+<!-- //list-css -->
 <!-- banner-slider -->
 <link href="recursos/css/jquery.slidey.min.css" rel="stylesheet">
 <!-- //banner-slider -->
@@ -67,12 +73,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
-				<a href="CtrlAdministrador"><h1>Mis<span>Pelis</span></h1></a>
+				<a href="CtrlAdministrador"><h1>Pelis<span>Plus</span></h1></a>
 			</div>
 			<div class="w3_search">
 				<form action="#" method="post">
-					<input type="text" name="Search" placeholder="Search" required="">
-					<input type="submit" value="Go">
+					<input type="text" name="Search" placeholder="Buscar..." required="">
+					<input type="submit" value="Buscar">
 				</form>
 			</div>
 			<div class="w3l_sign_in_register">
@@ -109,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</form>
 							  </div>
 							  <div class="form">
-								<h3>Create an account</h3>
+								<h3>Crear cuenta</h3>
 								<form action="#" method="post">
 								  <input type="text" name="Username" placeholder="Username" required="">
 								  <input type="password" name="Password" placeholder="Password" required="">
@@ -118,7 +124,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								  <input type="submit" value="Register">
 								</form>
 							  </div>
-							  <div class="cta"><a href="#">Forgot your password?</a></div>
+							  <!--div class="cta"><a href="#">Forgot your password?</a></div-->
 							</div>
 						</div>
 					</div>
@@ -158,80 +164,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="index.html">Home</a></li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Genres <b class="caret"></b></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Generos <b class="caret"></b></a>
 								<ul class="dropdown-menu multi-column columns-3">
 									<li>
 									<div class="col-sm-4">
 										<ul class="multi-column-dropdown">
-											<li><a href="genres.html">Action</a></li>
-											<li><a href="genres.html">Biography</a></li>
-											<li><a href="genres.html">Crime</a></li>
-											<li><a href="genres.html">Family</a></li>
-											<li><a href="horror.html">Horror</a></li>
-											<li><a href="genres.html">Romance</a></li>
-											<li><a href="genres.html">Sports</a></li>
-											<li><a href="genres.html">War</a></li>
+											<li><a href="Generos">Action</a></li>
+											<li><a href="Generos">Biography</a></li>
+											<li><a href="Generos">Crime</a></li>
+											<li><a href="Generos">Family</a></li>
+											<li><a href="Generos">Horror</a></li>
+											<li><a href="Generos">Romance</a></li>
+											<li><a href="Generos">Sports</a></li>
+											<li><a href="Generos">War</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-4">
 										<ul class="multi-column-dropdown">
-											<li><a href="genres.html">Adventure</a></li>
-											<li><a href="comedy.html">Comedy</a></li>
-											<li><a href="genres.html">Documentary</a></li>
-											<li><a href="genres.html">Fantasy</a></li>
-											<li><a href="genres.html">Thriller</a></li>
+											<li><a href="Generos">Adventure</a></li>
+											<li><a href="Generos">Comedy</a></li>
+											<li><a href="Generos">Documentary</a></li>
+											<li><a href="Generos">Fantasy</a></li>
+											<li><a href="Generos">Thriller</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-4">
 										<ul class="multi-column-dropdown">
-											<li><a href="genres.html">Animation</a></li>
-											<li><a href="genres.html">Costume</a></li>
-											<li><a href="genres.html">Drama</a></li>
-											<li><a href="genres.html">History</a></li>
-											<li><a href="genres.html">Musical</a></li>
-											<li><a href="genres.html">Psychological</a></li>
+											<li><a href="Generos">Animation</a></li>
+											<li><a href="Generos">Costume</a></li>
+											<li><a href="Generos">Drama</a></li>
+											<li><a href="Generos">History</a></li>
+											<li><a href="Generos">Musical</a></li>
+											<li><a href="Generos">Psychological</a></li>
 										</ul>
 									</div>
 									<div class="clearfix"></div>
 									</li>
 								</ul>
-							</li>
-							<li><a href="series.html">tv - series</a></li>
-							<li><a href="news.html">news</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Country <b class="caret"></b></a>
-								<ul class="dropdown-menu multi-column columns-3">
-									<li>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Asia</a></li>
-												<li><a href="genres.html">France</a></li>
-												<li><a href="genres.html">Taiwan</a></li>
-												<li><a href="genres.html">United States</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">China</a></li>
-												<li><a href="genres.html">HongCong</a></li>
-												<li><a href="genres.html">Japan</a></li>
-												<li><a href="genres.html">Thailand</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Euro</a></li>
-												<li><a href="genres.html">India</a></li>
-												<li><a href="genres.html">Korea</a></li>
-												<li><a href="genres.html">United Kingdom</a></li>
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</li>
-								</ul>
-							</li>
-							<li><a href="short-codes.html">Short Codes</a></li>
-							<li><a href="list.html">A - z list</a></li>
+							</li>	
+                                                        <li><a href="ListaEstrenos">Estrenos</a></li>
+                                                        <li><a href="ListaPelicula">A - z lista</a></li>
 						</ul>
 					</nav>
 				</div>
