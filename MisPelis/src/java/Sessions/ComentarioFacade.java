@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Facades;
+package Sessions;
 
-import Entity.TipoUsuario;
+import Entitys.Comentario;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -15,7 +15,7 @@ import javax.persistence.PersistenceContext;
  * @author aljad
  */
 @Stateless
-public class TipoUsuarioFacade extends AbstractFacade<TipoUsuario> {
+public class ComentarioFacade extends AbstractFacade<Comentario> {
 
     @PersistenceContext(unitName = "MisPelisPU")
     private EntityManager em;
@@ -25,8 +25,8 @@ public class TipoUsuarioFacade extends AbstractFacade<TipoUsuario> {
         return em;
     }
 
-    public TipoUsuarioFacade() {
-        super(TipoUsuario.class);
+    public ComentarioFacade() {
+        super(Comentario.class);
     }
     
 }

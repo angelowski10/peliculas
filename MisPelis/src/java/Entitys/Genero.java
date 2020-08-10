@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Entity;
+package Entitys;
 
 import java.io.Serializable;
 import java.util.List;
@@ -109,7 +109,7 @@ public class Genero implements Serializable {
 
     @Override
     public String toString() {
-        return "Entity.Genero[ idGenero=" + idGenero + " ]";
+        return "Entitys.Genero[ idGenero=" + idGenero + " ]";
     }
     
 }
