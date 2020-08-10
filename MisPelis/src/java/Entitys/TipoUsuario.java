@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Entity;
+package Entitys;
 
 import java.io.Serializable;
 import java.util.List;
@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Luis Angel
+ * @author aljad
  */
 @Entity
 @Table(name = "tipo_usuario")
@@ -110,7 +110,7 @@ public class TipoUsuario implements Serializable {
 
     @Override
     public String toString() {
-        return "Entity.TipoUsuario[ idTipousuario=" + idTipousuario + " ]";
+        return "Entitys.TipoUsuario[ idTipousuario=" + idTipousuario + " ]";
     }
     
 }

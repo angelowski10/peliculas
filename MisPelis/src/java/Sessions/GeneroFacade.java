@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Facades;
+package Sessions;
 
-import Entity.Comentario;
+import Entitys.Genero;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 /**
  *
- * @author Luis Angel
+ * @author aljad
  */
 @Stateless
-public class ComentarioFacade extends AbstractFacade<Comentario> {
+public class GeneroFacade extends AbstractFacade<Genero> {
 
     @PersistenceContext(unitName = "MisPelisPU")
     private EntityManager em;
@@ -25,8 +25,8 @@ public class ComentarioFacade extends AbstractFacade<Comentario> {
         return em;
     }
 
-    public ComentarioFacade() {
-        super(Comentario.class);
+    public GeneroFacade() {
+        super(Genero.class);
     }
     
 }

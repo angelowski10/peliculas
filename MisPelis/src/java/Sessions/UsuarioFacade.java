@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Facades;
+package Sessions;
 
-import Entity.Usuario;
+import Entitys.Usuario;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 /**
  *
- * @author Luis Angel
+ * @author aljad
  */
 @Stateless
 public class UsuarioFacade extends AbstractFacade<Usuario> {
