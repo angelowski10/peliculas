@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,18 +74,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
-				<a href="HomePublico"><h1>Pelis<span>Plus</span></h1></a>
+				<a href="Home_Publico"><h1>Pelis<span>Plus</span></h1></a>
 			</div>
 			<div class="w3_search">
-				<form action="#" method="post">
-					<input type="text" name="Search" placeholder="Buscar..." required="">
+				<form action="Buscar" method="get">
+					<input type="text" name="Search" placeholder="Buscar..." required="" autocomplete="off">
 					<input type="submit" value="Buscar">
 				</form>
 			</div>
 			<div class="w3l_sign_in_register">
 				<ul>
 					<!--li><i class="fa fa-phone" aria-hidden="true"></i> (+000) 123 345 653</li-->
-					<li><a href="#" data-toggle="modal" data-target="#myModal">Logout</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -96,22 +97,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					Cerrar sesión
+					Sign In & Sign Up
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
 				</div>
 				<section>
 					<div class="modal-body">
 						<div class="w3_login_module">
 							<div class="module form-module">
-							
-							  <div class="form">
-								
-								
+							  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+								<div class="tooltip">Click Me</div>
 							  </div>
 							  <div class="form">
-								<h3>Deseas salir de la sesión</h3>
-								<form action="#" method="post">
-								  <input type="submit" value="Aceptar">
+								<h3>Login to your account</h3>
+								<form action="autenticar" method="post">
+                                                                    <input type="text" name="Username" placeholder="Nombre de Usuario" required="" autocomplete="off">
+                                                                    <input type="password" name="Password" placeholder="Password" required="" autocomplete="off">
+								  <input type="submit" value="Login">
+								</form>
+							  </div>
+							  <div class="form">
+								<h3>Crear cuenta</h3>
+								<form action="Registro" method="post">
+                                                                    <input type="text" name="username" placeholder="Nombre de usuario" required="" autocomplete="off">
+								  <input type="password" name="password" placeholder="Password" required="" autocomplete="off">
+								  <input type="email" name="email" placeholder="Correo" required="" autocomplete="off">
+                                                                  <input type="text" name="nombre" placeholder="Nombre" required="" autocomplete="off">
+                                                                  <input type="text" name="apellido" placeholder="Apellido" required="" autocomplete="off">
+								  <input type="submit" value="Register">
 								</form>
 							  </div>
 							  <!--div class="cta"><a href="#">Forgot your password?</a></div-->
@@ -152,48 +164,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav>
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html">Home</a></li>
+							<li class="active"><a href="Home_Publico">Home</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Generos <b class="caret"></b></a>
 								<ul class="dropdown-menu multi-column columns-3">
 									<li>
 									<div class="col-sm-4">
 										<ul class="multi-column-dropdown">
-											<li><a href="Generos">Action</a></li>
-											<li><a href="Generos">Biography</a></li>
-											<li><a href="Generos">Crime</a></li>
-											<li><a href="Generos">Family</a></li>
-											<li><a href="Generos">Horror</a></li>
-											<li><a href="Generos">Romance</a></li>
-											<li><a href="Generos">Sports</a></li>
-											<li><a href="Generos">War</a></li>
-										</ul>
-									</div>
-									<div class="col-sm-4">
-										<ul class="multi-column-dropdown">
-											<li><a href="Generos">Adventure</a></li>
-											<li><a href="Generos">Comedy</a></li>
-											<li><a href="Generos">Documentary</a></li>
-											<li><a href="Generos">Fantasy</a></li>
-											<li><a href="Generos">Thriller</a></li>
-										</ul>
-									</div>
-									<div class="col-sm-4">
-										<ul class="multi-column-dropdown">
-											<li><a href="Generos">Animation</a></li>
-											<li><a href="Generos">Costume</a></li>
-											<li><a href="Generos">Drama</a></li>
-											<li><a href="Generos">History</a></li>
-											<li><a href="Generos">Musical</a></li>
-											<li><a href="Generos">Psychological</a></li>
-										</ul>
+                                                                                    <c:forEach var="g" items="${generoList}">
+                                                                                        <li><a href="Generos_Publico?id=${g.idGenero}">${g.nombre}</a></li>
+                                                                                    </c:forEach>
+                                                                                </ul>
 									</div>
 									<div class="clearfix"></div>
 									</li>
 								</ul>
 							</li>	
-                                                        <li><a href="ListaEstrenos">Estrenos</a></li>
-                                                        <li><a href="ListaPelicula">A - z lista</a></li>
+                                                        <li><a href="ListaEstrenos_Publico">Estrenos</a></li>
+                                                        <li><a href="ListaPelicula_Publico">A - z lista</a></li>
 						</ul>
 					</nav>
 				</div>
