@@ -25,7 +25,7 @@
                                                 </div>
 						<div class="video-grid-single-page-agileits">
                                                     <div data-video="dLmKio67pVQ" id="video"> 
-                                                       <img src="imagenes/Peliculas/cargando.gif" width="150" height="580" />
+                                                       <img src="imagenes/peliculas/cargando.gif" width="150" height="580" />
                                                     </div>
 						</div>
 					</div>
@@ -85,7 +85,7 @@
                                     <c:forEach var="pr" items="${peliculaRecomendacion}">
 					<div class="item">
 						<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-                                                    <a href="PeliculaDetalle_Registrado?id=${pr.idPelicula.idPelicula}" class="hvr-shutter-out-horizontal"><img src="imagenes/Peliculas/${pr.idPelicula.imagen}" title="album-name" width="180" height="283" />
+                                                    <a href="PeliculaDetalle_Registrado?id=${pr.idPelicula.idPelicula}" class="hvr-shutter-out-horizontal"><img src="imagenes/peliculas/${pr.idPelicula.imagen}" title="album-name" width="180" height="283" />
 								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 							</a>
 							<div class="mid-1 agileits_w3layouts_mid_1_home">

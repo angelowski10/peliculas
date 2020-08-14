@@ -35,7 +35,7 @@
                                                                                         <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
                                                                                         <c:forEach var="p" items="${peliculas}">
                                                                                                 <div class="col-md-2 w3l-movie-gride-agile">
-                                                                                                        <a href="PeliculaDetalle__Registrado?id=${p.idPelicula}" class="hvr-shutter-out-horizontal"><img src="imagenes/Peliculas/${p.imagen}" title="album-name" width="180" height="283" />
+                                                                                                        <a href="PeliculaDetalle__Registrado?id=${p.idPelicula}" class="hvr-shutter-out-horizontal"><img src="imagenes/peliculas/${p.imagen}" title="album-name" width="180" height="283" />
                                                                                                                 <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
                                                                                                         </a>
                                                                                                         <div class="mid-1 agileits_w3layouts_mid_1_home">
