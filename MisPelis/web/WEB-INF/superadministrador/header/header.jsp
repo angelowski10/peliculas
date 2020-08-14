@@ -19,11 +19,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SUPER ADMINISTRADOR</title>
+ <title>SUPER ADMINISTRADOR</title>
   <!-- Custom fonts for this template-->
   <link href="recursos/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+   <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
+  <link href="recursos/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+   
   <!-- Custom styles for this template-->
   <link href="recursos/css/sb-admin-2.min.css" rel="stylesheet">
 </head>
@@ -69,14 +73,15 @@
           <i class="fas fa-fw fa-users"></i>
           <span>Usuarios</span>
         </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+       <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Administrador:</h6>
-            <a class="collapse-item" href="#">Registro</a>
+            <a class="collapse-item" href="frmAdministradores">Registro</a>
+            <a class="collapse-item" href="ListAdministradores">Ver administradores</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Perfiles:</h6>
             <a class="collapse-item" href="#">Ver usuarios</a>
-            <a class="collapse-item" href="#">Ver administradores</a>
+            
           </div>
         </div>
       </li>
@@ -103,40 +108,13 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Película:</h6>
-            <a class="collapse-item" href="#">Lista</a>
-            <a class="collapse-item" href="#">Agregar película</a>
+          <a class="collapse-item" href="ListPeliculas">Lista</a>
+            <a class="collapse-item" href="frmPeliculas">Agregar película</a>
           </div>
         </div>
       </li>
       
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTec" aria-expanded="true" aria-controls="collapseTec">
-          <i class="fas fa-fw fa-star"></i>
-          <span>Estrenos de películas</span>
-        </a>
-        <div id="collapseTec" class="collapse" aria-labelledby="headingTec" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Películas:</h6>
-            <a class="collapse-item" href="tecnologia">Lista</a>
-            <a class="collapse-item" href="addTecnologia">Nuevo estreno</a>
-          </div>
-        </div>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOcu" aria-expanded="true" aria-controls="collapseOcu">
-          <i class="fas fa-fw fa-comments"></i>
-          <span>Comentarios películas</span>
-        </a>
-        <div id="collapseOcu" class="collapse" aria-labelledby="headingOcu" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Comentarios:</h6>
-            <a class="collapse-item" href="ocupacion">Lista</a>
-            <a class="collapse-item" href="addOcupacion">Agregar comentario</a>
-          </div>
-        </div>
-      </li>
-      
+    
       <!-- Divider -->
       <hr class="sidebar-divider">
 
