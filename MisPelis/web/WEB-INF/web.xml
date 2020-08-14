@@ -27,5 +27,12 @@
             <include-prelude>/WEB-INF/superadministrador/header/header.jsp</include-prelude>
             <include-coda>/WEB-INF/superadministrador/footer/footer.jsp</include-coda>
         </jsp-property-group>
+        <jsp-property-group>
+            <description>Marcos de modulos registrado</description>
+            <display-name>Header and Footer- HomeRegistrado</display-name>
+            <url-pattern>/WEB-INF/HomeRegistrado/*</url-pattern>
+            <include-prelude>/WEB-INF/HomeRegistrado/header/header.jsp</include-prelude>
+            <include-coda>/WEB-INF/HomeRegistrado/footer/footer.jsp</include-coda>
+        </jsp-property-group>
     </jsp-config>
 </web-app>
