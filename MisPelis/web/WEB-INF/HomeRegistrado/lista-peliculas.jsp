@@ -62,7 +62,7 @@
 										<tbody>
                                                                                   <c:forEach var="p" items="${peliculaList}">
                                                                                       <tr>
-                                                                                          <td><a href="PeliculaDetalle_Registrado?id=${p.idPelicula}"/><img src="imagenes/Peliculas/${p.imagen}" width="100" height="100 " /></td>
+                                                                                          <td><a href="PeliculaDetalle_Registrado?id=${p.idPelicula}"/><img src="imagenes/peliculas/${p.imagen}" width="100" height="100 " /></td>
                                                                                           <td><a href="PeliculaDetalle_Registrado?id=${p.idPelicula}"/> ${p.titulo} </td>
 											<td>${p.anioLanzamiento}</td>
 											<td>${p.duracion}</td>

@@ -9,12 +9,12 @@
 <!-- banner -->
 	<div id="slidey" style="display:none;">
 		<ul>
-			<li><img src="imagenes/Peliculas/elexorcista.gif" alt=" "><p class='title'>El exorcista</p><p class='description'>Una actriz llama a unos sacerdotes jesuitas para que intenten terminar con la posesión demoníaca de su hija de 12 años.</p></li>
-			<li><img src="imagenes/Peliculas/nosotros.gif" alt=" "><p class='title'>Nosotros</p><p class='description'>Adelaide y su esposo viajan a la casa en la que ella creció junto a la playa. Tiene un presentimiento siniestro que precede a un encuentro espeluznante: cuatro enmascarados se presentan ante su casa. Lo aterrador viene cuando muestran sus rostros.</p></li>
-			<li><img src="imagenes/Peliculas/ei.gif" alt=" "><p class='title'>Joker</p><p class='description'>Arthur Fleck adora hacer reír a la gente, pero su carrera como comediante es un fracaso. El repudio social, la marginación y una serie de trágicos acontecimientos lo conducen por el sendero de la locura y, finalmente, cae en el mundo del crimen.</p></li>
-			<li><img src="imagenes/Peliculas/laotramissy.gif" alt=" "><p class='title'>La otra missy</p><p class='description'>Tras un intensa relación virtual, un joven decide invitar a la chica de sus sueños a una isla paradisíaca. Sin embargo, cuando se encuentran en persona, ambos se dan cuenta del error que han cometido.</p></li>
-			<li><img src="imagenes/Peliculas/tequieroimbecil.gif" alt=" "><p class='title'>Te quiero imbecil</p><p class='description'>Contamos cómo una nueva generación de hombres de 30 años se sienten perdidos frente al nuevo rol de la mujer y al suyo propio. En realidad, la sociedad ha cambiado y, con ella, las relaciones. El "machote" ya no está de moda y hay que adaptarse a los nuevos referentes masculinos. Marcos, intentará convertirse en un hombre actual de los que se depila y se interesa por la moda</p></li>
-			<li><img src="imagenes/Peliculas/conjuro.gif" alt=" "><p class='title'>El conjuro 3</p><p class='description'>“The Conjuring: The Devil Made Me Do It”  revela una escalofriante historia de terror, asesinatos y una desconocida y malvada entidad que incluso sorprendió a los experimentados investigadores de lo paranorlal Lorraine y Ed Warren. Uno de los casos más sensacionales de los archivos de los Warren, comienza por la batalla por el alma de un pequeño niño y después los leva más allá de todo lo que han vivido antes, tanto que , por primera vez en la historia de Estados Unidos, un sospechoso de asesinato se declara inocente, por posesión demoníaca.</p></li>
+			<li><img src="imagenes/peliculas/elexorcista.gif" alt=" "><p class='title'>El exorcista</p><p class='description'>Una actriz llama a unos sacerdotes jesuitas para que intenten terminar con la posesión demoníaca de su hija de 12 años.</p></li>
+			<li><img src="imagenes/peliculas/nosotros.gif" alt=" "><p class='title'>Nosotros</p><p class='description'>Adelaide y su esposo viajan a la casa en la que ella creció junto a la playa. Tiene un presentimiento siniestro que precede a un encuentro espeluznante: cuatro enmascarados se presentan ante su casa. Lo aterrador viene cuando muestran sus rostros.</p></li>
+			<li><img src="imagenes/peliculas/ei.gif" alt=" "><p class='title'>Joker</p><p class='description'>Arthur Fleck adora hacer reír a la gente, pero su carrera como comediante es un fracaso. El repudio social, la marginación y una serie de trágicos acontecimientos lo conducen por el sendero de la locura y, finalmente, cae en el mundo del crimen.</p></li>
+			<li><img src="imagenes/peliculas/laotramissy.gif" alt=" "><p class='title'>La otra missy</p><p class='description'>Tras un intensa relación virtual, un joven decide invitar a la chica de sus sueños a una isla paradisíaca. Sin embargo, cuando se encuentran en persona, ambos se dan cuenta del error que han cometido.</p></li>
+			<li><img src="imagenes/peliculas/tequieroimbecil.gif" alt=" "><p class='title'>Te quiero imbecil</p><p class='description'>Contamos cómo una nueva generación de hombres de 30 años se sienten perdidos frente al nuevo rol de la mujer y al suyo propio. En realidad, la sociedad ha cambiado y, con ella, las relaciones. El "machote" ya no está de moda y hay que adaptarse a los nuevos referentes masculinos. Marcos, intentará convertirse en un hombre actual de los que se depila y se interesa por la moda</p></li>
+			<li><img src="imagenes/peliculas/conjuro.gif" alt=" "><p class='title'>El conjuro 3</p><p class='description'>“The Conjuring: The Devil Made Me Do It”  revela una escalofriante historia de terror, asesinatos y una desconocida y malvada entidad que incluso sorprendió a los experimentados investigadores de lo paranorlal Lorraine y Ed Warren. Uno de los casos más sensacionales de los archivos de los Warren, comienza por la batalla por el alma de un pequeño niño y después los leva más allá de todo lo que han vivido antes, tanto que , por primera vez en la historia de Estados Unidos, un sospechoso de asesinato se declara inocente, por posesión demoníaca.</p></li>
 		</ul>   	
     </div>
     <script src="recursos/js/jquery.slidey.js"></script>
@@ -37,7 +37,7 @@
                                     <c:forEach var="p" items="${peliculaList}">
                                         <div class="item">
 						<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-							<a href="PeliculaDetalle__Registrado?id=${p.idPelicula}" class="hvr-shutter-out-horizontal"><img src="imagenes/Peliculas/${p.imagen}" title="album-name" width="180" height="283"/>
+							<a href="PeliculaDetalle__Registrado?id=${p.idPelicula}" class="hvr-shutter-out-horizontal"><img src="imagenes/peliculas/${p.imagen}" title="album-name" width="180" height="283"/>
 								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 							</a>
 							<div class="mid-1 agileits_w3layouts_mid_1_home">
@@ -68,7 +68,7 @@
                                     <div class="agile_tv_series_grid">
 					<div class="col-md-6 agile_tv_series_grid_left">
                                             <div class="w3ls_market_video_grid1">
-                                                <img src="imagenes/Peliculas/${pr.idPelicula.imagen}"  width="320" height="340" />
+                                                <img src="imagenes/peliculas/${pr.idPelicula.imagen}"  width="320" height="340" />
                                                     <a class="w3_play_icon" href="#small-dialog">
 							<span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
                                                     </a>
@@ -125,7 +125,7 @@
 					<div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
                                         <c:forEach var="pD" items="${peliculaDestacada}">
                                                 <div class="col-md-2 w3l-movie-gride-agile">
-							<a href="PeliculaDetalle__Registrado?id=${pD.idPelicula}" class="hvr-shutter-out-horizontal"><img src="imagenes/Peliculas/${pD.imagen}" title="album-name" width="180" height="283" />
+							<a href="PeliculaDetalle__Registrado?id=${pD.idPelicula}" class="hvr-shutter-out-horizontal"><img src="imagenes/peliculas/${pD.imagen}" title="album-name" width="180" height="283" />
 								<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 							</a>
 							<div class="mid-1 agileits_w3layouts_mid_1_home">
@@ -158,7 +158,7 @@
                                                             
                                                             <c:forEach var="pp" items="${peliculasPopulares}">
                                                             <div class="col-md-2 w3l-movie-gride-agile">
-								<a href="PeliculaDetalle__Registrado?id=${pp.idPelicula.idPelicula}" class="hvr-shutter-out-horizontal"><img src="imagenes/Peliculas/${pp.idPelicula.imagen}" title="album-name" width="180" height="283" />
+								<a href="PeliculaDetalle__Registrado?id=${pp.idPelicula.idPelicula}" class="hvr-shutter-out-horizontal"><img src="imagenes/peliculas/${pp.idPelicula.imagen}" title="album-name" width="180" height="283" />
                                                                     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 								</a>
 								<div class="mid-1 agileits_w3layouts_mid_1_home">
