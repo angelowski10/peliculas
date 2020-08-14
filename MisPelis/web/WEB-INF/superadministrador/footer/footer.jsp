@@ -1,3 +1,4 @@
+@@ -0,0 +1,73 @@
 <%-- 
     Document   : foter
     Created on : 13-jul-2020, 11:14:48
@@ -51,22 +52,33 @@
     </div>
   </div>
 
-  <!-- Bootstrap core JavaScript-->
+   <!-- Bootstrap core JavaScript-->
+  
+   <script src="recursos/js/jquery-3.5.1.js" ></script>
+  
   <script src="recursos/vendor/jquery/jquery.min.js"></script>
+  
   <script src="recursos/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="recursos/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="recursos/js/sb-admin-2.min.js"></script>
-
+  
   <!-- Page level plugins -->
   <script src="recursos/vendor/chart.js/Chart.min.js"></script>
+  
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    
+  
 
   <!-- Page level custom scripts -->
   <script src="recursos/js/demo/chart-area-demo.js"></script>
+  
   <script src="recursos/js/demo/chart-pie-demo.js"></script>
+ 
+    
+  <script src="recursos/funcion_dataTable/funcion_dataTable.js"></script>
+  
+
+ 
 
 </body>
 
