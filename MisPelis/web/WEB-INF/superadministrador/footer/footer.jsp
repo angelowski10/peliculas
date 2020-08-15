@@ -1,4 +1,4 @@
-@@ -0,0 +1,73 @@
+
 <%-- 
     Document   : foter
     Created on : 13-jul-2020, 11:14:48
@@ -15,9 +15,7 @@
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Pelis plus 2020</span>
-          </div>
+        
         </div>
       </footer>
       <!-- End of Footer -->
