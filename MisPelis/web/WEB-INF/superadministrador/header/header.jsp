@@ -94,8 +94,8 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Categorias</h6>
-            <a class="collapse-item" href="#">Lista</a>
-            <a class="collapse-item" href="#">Nuevo genero</a>
+            <a class="collapse-item" href="Admin_Generos">Lista</a>
+            <a class="collapse-item" href="NuevoAdminGenero">Nuevo genero</a>
           </div>
         </div>
       </li>
