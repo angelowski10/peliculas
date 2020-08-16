@@ -84,9 +84,9 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Categorias</h6>
-            <a class="collapse-item" href="#">Lista</a>
-            <a class="collapse-item" href="#">Nuevo genero</a>
+            <h6 class="collapse-header">Generos</h6>
+            <a class="collapse-item" href="Admin_Generos">Lista</a>
+<!--            <a class="collapse-item" href="#">Nuevo genero</a>-->
           </div>
         </div>
       </li>
@@ -99,13 +99,13 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Película:</h6>
-            <a class="collapse-item" href="#">Lista</a>
-            <a class="collapse-item" href="#">Agregar película</a>
+            <a class="collapse-item" href="Admin_Peliculas">Lista</a>
+            <a class="collapse-item" href="AdminAddPelicula">Agregar película</a>
           </div>
         </div>
       </li>
       
-      <li class="nav-item">
+<!--      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTec" aria-expanded="true" aria-controls="collapseTec">
           <i class="fas fa-fw fa-star"></i>
           <span>Estrenos de películas</span>
@@ -117,9 +117,9 @@
             <a class="collapse-item" href="addTecnologia">Nuevo estreno</a>
           </div>
         </div>
-      </li>
+      </li>-->
       
-      <li class="nav-item">
+<!--      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOcu" aria-expanded="true" aria-controls="collapseOcu">
           <i class="fas fa-fw fa-comments"></i>
           <span>Comentarios películas</span>
@@ -131,7 +131,7 @@
             <a class="collapse-item" href="addOcupacion">Agregar comentario</a>
           </div>
         </div>
-      </li>
+      </li>-->
       
       <!-- Divider -->
       <hr class="sidebar-divider">

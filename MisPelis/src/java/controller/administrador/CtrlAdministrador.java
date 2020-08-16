@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  *
  * @author Luis Angel
+ * 
  */
 @WebServlet(name = "CtrlAdministrador", urlPatterns = {"/CtrlAdministrador"})
 public class CtrlAdministrador extends HttpServlet {
