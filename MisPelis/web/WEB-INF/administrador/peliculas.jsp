@@ -90,7 +90,17 @@
             </div>
           </div>
           
-            <div class="col-md-12 grid-margin strech-card">
+                                   <br />
+
+
+          
+
+        </div>
+        <!-- /.container-fluid -->
+
+        <!-- codigo de peliculas -->
+        
+        <div class="col-md-12 grid-margin strech-card">
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title">
@@ -98,50 +108,35 @@
                                 <div class="row">
                                 <div class="col-md-9 theeme-grid-col">
                                    
-                                   Editar / Generos      
+                                    <a href="CtrlAdministrador">Inicio</a> / Peliculas      
                                    
                                    
                                 </div>
-                                <div class="col-md-3 theeme-grid-col">
-                                   
-                                   
-                                    <input type="text" 
-                                   value="Total de registros : ${total}" readonly=""
-                                   class="form-control form-control-sm"
-                                   >      
-                                    </div>
-                              
-                                    
-                                </div>
-                                     
-                            </div>
-                                    
-                                
-                           
-                            
-                           
-                                   
-                          
+                                </div>   
+                            </div>       
                         </div>
                         <div class="col-md-12 strech-card">
                             <div class="espacio-boton-table">
                                 
                             
-                                <div class="table-responsive jsgrid-grid-body" style="height: 200px;" >
+                    <div class="table-responsive jsgrid-grid-body" style="height: 500px;" >
                                 
                              
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th> </th>
-                                    <th>Código</th>
-                                    <th>Genero</th>
-                                    <th>Modalidad</th>
+                                    <th><b>Pelicula</b></th>
+                                    <th>Lanzamiento</th>
+                                    <th>Duracion</th>
+                                    <th>Genero(s)</th>
+                                    <th>Sinopsis</th>
+                                    <th> </th>
                                 </tr>
                             </thead>
                            
                             <tbody>
-                       <c:forEach var="t" items="${generos}" >      
+                       <c:forEach var="peliculas" items="${ListadoPeliculas}" >      
                                
                                 <tr>
                                     <td>
@@ -152,21 +147,30 @@
                                            Opciones     
                                            </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="editGenero?id=${t.idGenero}"> Modificar </a>
+                                                <a class="dropdown-item" href="AdminEditPelicula?id=${peliculas.idPelicula}"> Modificar </a>
                                                 <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item"  href="deleteGenero?id=${t.idGenero}"> Eliminar </a>
-                                                <input type="hidden" value="${t.idGenero}" class="idGenero">
+                                                <a class="dropdown-item"  href="AdminEliminarPelicula?id=${peliculas.idPelicula}"> Eliminar </a>
+                                                <input type="hidden" value="${t.idPelicula}" class="idGenero">
                                           
                                             </div>
                                         </div>
                                     </td>
-                                    <td>${t.idGenero}</td>
-                                    <td>${t.nombre}</td>
-                                    <td>Activada</td>
-                                      <td> 
+                                    <td><center>${peliculas.titulo}</center></td>
+                                    <td><center>${peliculas.anioLanzamiento}</center></td>
+                                    <td><center>${peliculas.duracion}</center></td>
+                                    <!--Generos que tiene esa pelicula -->
+                                    <td><center>
+                                    <c:forEach var="genero" items="${peliculas.generoList}">
+                                    ${genero.nombre},
+                                    </c:forEach>
+                                    </center>
+                                    </td>  
+                                    <td><center>${peliculas.sinopsis}</td>  
+                                    <td><center><img src="${PeliculasCarpeta}/${peliculas.imagen}"
+                                        style="width: 30%; height: 30%; border-radius: 10px;"
+                                        alt="imagen"></center>
                                       
-                                 
-                                      </td>  
+                                    </td>  
                                 </tr>
                                   </c:forEach>
                                
@@ -182,27 +186,8 @@
                     </div>
                 </div>
             </div>
-                                   <br />
-                                   
-                                   <h2>Agregar genero</h2>
-                                   <form method="post" action="NuevoAdminGenero">
-                                       
-                                       <input type="text"
-                                              value="" name="txtGenero" />
-                                       
-                                       <button type="submit">
-                                           
-                                           Guardar
-                                           
-                                       </button>
-                                       
-                                   </form>
-
-          
-
-        </div>
-        <!-- /.container-fluid -->
-
+            
+        
       </div>
       <!-- End of Main Content -->
 

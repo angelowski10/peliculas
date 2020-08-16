@@ -22,6 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  *
  * @author Luis Angel
+ * 
  */
 @WebServlet(name = "CtrlAdministradorGeneros", urlPatterns = {"/Admin_Generos",
                                                             "/NuevoAdminGenero","/editGenero","/deleteGenero"})
